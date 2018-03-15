@@ -34,6 +34,12 @@
 ?>
 <!DOCTYPE html>
 <html>
+    <style>
+        body {
+           background-image: url("http://www.stickpng.com/assets/images/584294a4a6515b1e0ad75ace.png");
+           background-size: cover;
+        }
+    </style>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +57,7 @@
             <nav class='navbar navbar-default - navbar-fixed-top'>
                 <div class='container-fluid'>
                     <div class='navbar-header'>
-                        <a class='navbar-brand' href='#'>Shopping Land</a>
+                        <a class='navbar-brand' href='#'>Gucci Store</a>
                     </div>
                     <ul class='nav navbar-nav'>
                         <li><a href='index.php'>Home</a></li>
@@ -72,7 +78,9 @@
             </form>
             
             <!-- Display Search Results -->
-            <?php displayResults(); ?>
+            <?php 
+                displayResults();
+            ?>
             
         </div>
     </div>
