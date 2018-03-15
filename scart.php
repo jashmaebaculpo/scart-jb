@@ -45,7 +45,7 @@
                 <nav class='navbar navbar-default - navbar-fixed-top'>
                     <div class='container-fluid'>
                         <div class='navbar-header'>
-                            <a class='navbar-brand' href='#'>Gucci Store</a>
+                            <a class='navbar-brand' href='#'>The Random Store</a>
                         </div>
                         <ul class='nav navbar-nav'>
                             <li><a href='index.php'>Home</a></li>
