@@ -1,14 +1,37 @@
 <?php
-    //checks to see if form was given/submitted
-    if(isset($_GET['query']))
-    {
-        //gets access to the API key
-        include 'wmapi.php';
-        $items = getProducts($_GET['query']);
-        print_r($items);
-    }
+   include 'functions.php';
+   
+   session_start();
+   
+   if(!isset($_SESSION['cart'])){
+       $_SESSION['cart'] = array();
+   }
+   
+   if(isset($_POST['itemName'])){
+       $newItem = array();
+       $newItem['name'] = $_POST['itemName'];
+       $newItem['id'] = $_POST['itemId'];
+       $newItem['price'] = $_POST['itemPrice'];
+       $newItem['image'] = $_POST['itemImage'];
+       
+       foreach($_SESSION['cart'] as &$item){
+           if ($newItem['id'] ==  $item['id']){
+               $item['quantity'] += 1;
+               $found = true;
+           }
+       }
+       
+       if($found != true){
+           $newItem['quantity'] = 1;
+           array_push($_SESSION['cart'], $newItem);
+       }
+   }
+   
+   if(isset($_GET['query'])) {
+       include 'wmapi.php';
+       $items = getProducts($_GET['query']);
+   }
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -49,6 +72,7 @@
             </form>
             
             <!-- Display Search Results -->
+            <?php displayResults(); ?>
             
         </div>
     </div>
