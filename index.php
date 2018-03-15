@@ -36,7 +36,7 @@
 <html>
     <style>
         body {
-           background-image: url("http://www.stickpng.com/assets/images/584294a4a6515b1e0ad75ace.png");
+           background-image: url("https://www.stovkomat.cz/reference/9644/logo%204.png");
            background-size: cover;
         }
     </style>
@@ -57,7 +57,7 @@
             <nav class='navbar navbar-default - navbar-fixed-top'>
                 <div class='container-fluid'>
                     <div class='navbar-header'>
-                        <a class='navbar-brand' href='#'>Gucci Store</a>
+                        <a class='navbar-brand' href='#'>The Random Store</a>
                     </div>
                     <ul class='nav navbar-nav'>
                         <li><a href='index.php'>Home</a></li>
