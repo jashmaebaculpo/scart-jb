@@ -24,7 +24,7 @@
 <html>
     <style>
         body {
-           background-image: url("http://www.stickpng.com/assets/images/584294a4a6515b1e0ad75ace.png");
+           background-image: url("https://www.stovkomat.cz/reference/9644/logo%204.png");
            background-size: cover;
         }
     </style>
